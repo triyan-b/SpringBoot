@@ -1,0 +1,30 @@
+@url = http://localhost:8080/api/v1/dishes
+
+### Get all records
+GET {{url}}/all
+
+### Get record
+GET {{url}}/7
+
+### Add record
+POST {{url}}/add 
+Content-Type: application/json 
+
+{
+    "assignee":"Triyan",
+    "category":null,
+    "dishName":null
+}
+
+### Update record
+PUT {{url}}/7 
+Content-Type: application/json 
+
+{
+    "assignee":"Albert",
+    "category":null,
+    "dishName":null
+}
+
+### Delete record
+DELETE {{url}}/6
