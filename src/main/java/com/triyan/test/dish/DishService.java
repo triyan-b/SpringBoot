@@ -27,7 +27,6 @@ public class DishService {
     }
 
     public String addDish(Dish dish) {
-        //System.out.println(dish);
         Optional<Dish> optionalDish = dishRepository.findDishByAssignee(dish.getAssignee());
         if(optionalDish.isPresent()) {
             return "Record with assignee " + dish.getAssignee() + " already exists!";
