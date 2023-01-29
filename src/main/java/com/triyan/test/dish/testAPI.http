@@ -4,7 +4,7 @@
 GET {{url}}/all
 
 ### Get record
-GET {{url}}/7
+GET {{url}}/70
 
 ### Add record
 POST {{url}}/add 
@@ -28,3 +28,6 @@ Content-Type: application/json
 
 ### Delete record
 DELETE {{url}}/6
+
+### Get count by category
+GET {{url}}/count
