@@ -65,4 +65,9 @@ public class DishController {
 		}
 		return "Success";
 	}
+
+	@GetMapping("/count")
+	public List<Object> getCountByCategory() {
+		return dishService.getCountByCategory();
+	}
 }
