@@ -58,7 +58,7 @@ public class DishService {
         return false;
     }
 
-    public List<Object> getCountByCategory() {
+    public List<ICategoryCount> getCountByCategory() {
         return dishRepository.countByCategoryOrderByCountDesc();
     }
 }

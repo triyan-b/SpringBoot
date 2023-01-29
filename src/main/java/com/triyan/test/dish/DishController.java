@@ -67,7 +67,7 @@ public class DishController {
 	}
 
 	@GetMapping("/count")
-	public List<Object> getCountByCategory() {
+	public List<ICategoryCount> getCountByCategory() {
 		return dishService.getCountByCategory();
 	}
 }

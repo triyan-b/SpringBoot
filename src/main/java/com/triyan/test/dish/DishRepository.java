@@ -14,6 +14,6 @@ public interface DishRepository extends JpaRepository<Dish, Long> {
     // Translates to SELECT * FROM dishes AS d WHERE d.assignee = assignee
     Optional<Dish> findDishByAssignee(String assignee);
 
-    @Query("SELECT d.category, COUNT(*) as cnt FROM Dish as d GROUP BY d.category ORDER BY cnt DESC")
-    List<Object> countByCategoryOrderByCountDesc();
+    @Query("SELECT d.category AS category, COUNT(*) AS count FROM Dish AS d GROUP BY d.category ORDER BY count DESC")
+    List<ICategoryCount> countByCategoryOrderByCountDesc();
 }
